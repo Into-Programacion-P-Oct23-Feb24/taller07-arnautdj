@@ -36,7 +36,7 @@ public class Problema01 {
         cadenaReporte = String.format("%s%s\n", cadenaReporte, 
                 "Listado de Jugadores");
         
-        while(bandera){
+        do {
             System.out.println("Ingrese el nombre del Jugador: ");
             nombreJugador = entrada.nextLine();
             System.out.println("Ingrese la posición en el campo: ");
@@ -68,7 +68,7 @@ public class Problema01 {
             if(salir.equals("s")){
                 bandera = false;
             }
-        }
+        } while (bandera);
         
         promedioEdad = (double)sumaEdades/contadorIteraciones;
         promedioEstatura = sumaEstaturas/contadorIteraciones;
